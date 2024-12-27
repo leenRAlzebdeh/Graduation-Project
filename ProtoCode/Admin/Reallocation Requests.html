@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respond to Reallocation Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .request {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .request h3 {
+            margin: 0;
+        }
+        .buttons {
+            margin-top: 1rem;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 0.5rem;
+        }
+        button.reject {
+            background-color: #FF5733;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reallocation Requests</h1>
+    </header>
+    <div class="container">
+       
+        <div class="request">
+            <h3>Request #1</h3>
+            <p><strong>Requesting Employee ID:</strong> E12345</p>
+            <p><strong>Current Department:</strong> SE</p>
+            <p><strong>Requested Department:</strong> Civil Eng</p>
+            <p><strong>Cabinet Number:</strong> Cab-101</p>
+            <div class="buttons">
+                <button >Approve</button>
+                <button class="reject" >Reject</button>
+            </div>
+        </div>
+    </div>
+<div class="container">
+       
+        <div class="request">
+            <h3>Request #2</h3>
+            <p><strong>Requesting Employee ID:</strong> E12345</p>
+            <p><strong>Current Department:</strong> SE</p>
+            <p><strong>Requested Department:</strong> Civil Eng</p>
+            <p><strong>Cabinet Number:</strong> Cab-101</p>
+            <div class="buttons">
+                <button >Approve</button>
+                <button class="reject" >Reject</button>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

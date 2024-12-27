@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Covenant of Employee </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 1rem;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            margin-bottom: 1rem;
+        }
+        .form-container label {
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        .form-container select, .form-container button {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .notification {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #e7f5ff;
+            border-radius: 5px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reassign Cabinet Responsibilities</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h3>Change Covenant of Employee </h3>
+
+            <form id="reassignCabinetForm">
+                <label for="department">Select Department</label>
+                <select id="department" name="department" required>
+                    <option value="">-- Select Department --</option>
+                    <option value="HR">HR</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Finance">Finance</option>
+                    <option value="IT">IT</option>
+                </select>
+
+                <label for="currentEmployee"> Current Responsible Employee No</label>
+                <select id="currentEmployee" name="currentEmployee" required>
+                    <option value="">--  Employee --</option>
+                    <option value="emp1">E15345</option>
+                    <option value="emp2">E54546</option>
+                    <option value="emp3">E33112</option>
+                </select>
+
+                <label for="cabinet"> Cabinet to Reassign</label>
+                <select id="cabinet" name="cabinet" required>
+                    <option value="">-- Select Cabinet --</option>
+                    <option value="cab1">Cabinet #101</option>
+                    <option value="cab2">Cabinet #102</option>
+                    <option value="cab3">Cabinet #103</option>
+                </select>
+
+                <label for="newEmployee">Assign New Employee</label>
+                <select id="newEmployee" name="newEmployee" required>
+                    <option value="">-- Select New Employee --</option>
+                    <option value="emp4">Emily White</option>
+                    <option value="emp5">David Brown</option>
+                    <option value="emp6">Olivia Green</option>
+                </select>
+
+                <button type="submit">Reassign Responsibilities</button>
+            </form>
+
+            <div class="notification" id="notification" style="display:none;">
+                <p>Cabinet responsibilities reassigned successfully. Both the current and new employee will be notified.</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

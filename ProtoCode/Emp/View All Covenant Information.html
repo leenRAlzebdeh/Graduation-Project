@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Covenant Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f3f6fa;
+        }
+
+        header {
+            padding: 10px 20px;
+            background-color: #000080; /* Navy blue */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .info {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555555;
+        }
+
+        .info strong {
+            color: #333333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        table th, table td {
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #000080; /* Navy blue */
+            color: white;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #000080; /* Navy blue */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #000066; 
+        }
+
+        button:active {
+            background-color: #000033; 
+        }
+    </style>
+    <script>
+        function toggleSelectAll(source) {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = source.checked;
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>View All Covenant Information</h1>
+    </header>
+    <div class="info">
+        <p><strong>Employee Name:</strong> Mahmoud Hamad</p>
+        <p><strong>Employee ID:</strong> E12345</p>
+        <p><strong>Department:</strong> Software Engineer</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" onchange="toggleSelectAll(this)" /></th>
+                <th>Cabinet No</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Cab-2</td>
+                <td>Building N1, Level 2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>Cab-15</td>
+                <td>Building N2, Level 1</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="actions">
+        <button>Reallocate / Same Covenant</button>
+        <button>Reallocate / Diff Covenant</button>
+    </div>
+</body>
+</html>

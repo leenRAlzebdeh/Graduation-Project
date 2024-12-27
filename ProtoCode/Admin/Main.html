@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Locker Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000068;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 2rem;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 1rem 0;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel - Locker Reservation System</h1>
+    </header>
+    <nav>
+        <a href="#reallocation-requests">Respond to Reallocation Requests</a>
+        <a href="#cabinet-info">View All Cabinet Information</a>
+        <a href="#add-cabinet">Add New Cabinet</a>
+        <a href="#employees">View All Employees</a>
+        <a href="#change-covenant">Change Covenant of Employee</a>
+        <a href="#student-reports">View Sent Student Reports</a>
+    </nav>
+    <div class="container">
+    
+        <div id="reallocation-requests" class="card">
+            <h2>Respond to Reallocation Requests</h2>
+            <p>View and manage student reallocation requests for lockers.</p>
+            <button>View Requests</button>
+        </div>
+
+       
+        <div id="cabinet-info" class="card">
+            <h2>View All Cabinet Information</h2>
+            <p>Browse detailed information about all cabinets, including status and locations.</p>
+            <button>View Cabinets</button>
+        </div>
+
+
+        <div id="add-cabinet" class="card">
+            <h2>Add New Cabinet</h2>
+            <p>Add new cabinets to the locker system.</p>
+            <button>Add Cabinet</button>
+        </div>
+
+    
+        <div id="employees" class="card">
+            <h2>View All Employees</h2>
+            <p>Manage employee records and view locker assignments.</p>
+            <button>View Employees</button>
+        </div>
+
+        <div id="change-covenant" class="card">
+            <h2>Change Covenant of Employee</h2>
+            <p>Update the locker assignments or responsibilities of employees.</p>
+            <button>Change Covenant</button>
+        </div>
+
+        <div id="student-reports" class="card">
+            <h2>View Sent Reports</h2>
+            <p>Access reports sent by students regarding lockers.</p>
+            <button>View Reports</button>
+        </div>
+    </div>
+</body>
+</html>

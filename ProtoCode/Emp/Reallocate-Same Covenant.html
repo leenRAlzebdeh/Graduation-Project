@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reallocate - Same Covenant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input[readonly] {
+            background-color: #e9ecef;
+        }
+
+        .lock-icon {
+            position: relative;
+            display: inline-block;
+        }
+
+        .lock-icon::after {
+            content: '\1F512'; 
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reallocate / Same Covenant</h2>
+        <div class="form-group">
+            <label for="cabinet">Cabinet</label>
+            <div class="lock-icon">
+                <input type="text" id="cabinet" value="Cab-2 /N1-L2" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="new-building">New Building</label>
+            <select id="new-building">
+                <option value="N1">N1</option>
+                <option value="N2">N2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="new-level">New Level</label>
+            <select id="new-level">
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L0">L0</option>
+            </select>
+        </div>
+        <button>Reallocate</button>
+    </div>
+</body>
+</html>
